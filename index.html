@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Assignment</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Enhanced Form</h1>
+        <p>Please fill out this form to register for our services. Fields marked with * are required.</p>
+        
+        <h2>Key Features</h2>
+        <ul>
+            <li>HTML5 form validation</li>
+            <li>Responsive design</li>
+            <li>Accessible form controls</li>
+            <li>Modern styling</li>
+            <li>Semantic HTML structure</li>
+        </ul>
+    </header>
+
+    <section>
+        <h2>Pricing Plans</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Plan</th>
+                    <th>Features</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Basic</td>
+                    <td>Standard features</td>
+                    <td>100sh/month</td>
+                </tr>
+                <tr>
+                    <td>Pro</td>
+                    <td>Advanced features + support</td>
+                    <td>100sh/month</td>
+                </tr>
+                <tr>
+                    <td>Enterprise</td>
+                    <td>All features + priority support</td>
+                    <td>50sh/month</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Product Demo</h2>
+        <img src="/said (2).JPG" alt="demonstration">
+        <audio controls>
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+
+    <main>
+        <form id="registrationForm" novalidate>
+            <fieldset>
+                <legend>Personal Information</legend>
+                
+                <div class="form-group">
+                    <label for="fullName" class="required">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="said" required autocomplete="name">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email" class="required">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="said@example.com" required autocomplete="email">
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" autocomplete="tel">
+                    <small class="error">Format: 123-456-7890</small>
+                </div>
+                
+                <div class="form-group">
+                    <label for="birthdate">Date of Birth</label>
+                    <input type="date" id="birthdate" name="birthdate" max="2020-01-01">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Account Details</legend>
+                
+                <div class="form-group">
+                    <label for="username" class="required">Username</label>
+                    <input type="text" id="username" name="username" placeholder="said" required autocomplete="username" minlength="4" maxlength="20">
+                    <small class="error">4-20 characters</small>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password" class="required">Password</label>
+                    <input type="password" id="password" name="password" required autocomplete="new-password" minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                    <small class="error">Must contain at least one number, one uppercase and lowercase letter, and at least 8 characters</small>
+                </div>
+                
+                <div class="form-group">
+                    <label for="confirmPassword" class="required">Confirm Password</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferences</legend>
+                
+                <div class="form-group">
+                    <label for="plan">Select Your Plan</label>
+                    <select id="plan" name="plan">
+                        <option value="">--Please choose an option--</option>
+                        <option value="basic">Basic</option>
+                        <option value="pro">Pro</option>
+                        <option value="enterprise">Enterprise</option>
+                    </select>
+                </div>
+                
+      
+
+            <fieldset>
+                <legend>Additional Information</legend>
+                
+                <div class="form-group">
+                    <label for="referenceId">Reference ID</label>
+                    <input type="text" id="referenceId" name="referenceId" value="ABC123" readonly>
+                </div>
+                
+                <div class="form-group">
+                    <label for="experience">Years of Experience</label>
+                    <input type="number" id="experience" name="experience" min="0" max="50" step="1">
+                </div>
+                
+                <div class="form-group">
+                    <label for="favcolor">Favorite Color</label>
+                    <input type="color" id="favcolor" name="favcolor" value="#3498db">
+                </div>
+                
+                <div class="form-group">
+                    <label for="volume">Volume Preference</label>
+                    <input type="range" id="volume" name="volume" min="0" max="100" step="10" value="50">
+                </div>
+            </fieldset>
+
+            <div class="form-group">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms" style="display: inline;" class="required">I agree to the terms and conditions</label>
+            </div>
+
+            <div class="form-group">
+                <button type="submit">Submit Registration</button>
+                <button type="reset">Reset Form</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <h2>Contact Information</h2>
+        <address>
+            Email: <a href="mailto:info@example.com">info@example.com</a><br>
+            Phone: <a href="tel:+1234567890">(123) 456-7890</a><br>
+            kenya,Nairobi
+        </address>
+        <p>&copy; 2023 Enhanced Form Company. All rights reserved.</p>
+    </footer>
+</body>
+</html>
